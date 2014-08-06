@@ -155,6 +155,7 @@
     <Compile Include="Models\EnrollmentModel.cs" />
     <Compile Include="Models\SubjectModel.cs" />
     <Compile Include="Models\TutorModel.cs" />
+    <Compile Include="Services\LearningControllerSelector.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\FilterConfig.cs" />
