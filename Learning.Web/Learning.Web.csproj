@@ -139,6 +139,7 @@
     <Compile Include="Controllers\BaseApiController.cs" />
     <Compile Include="Controllers\CoursesController.cs" />
     <Compile Include="Controllers\EnrollmentsController.cs" />
+    <Compile Include="Controllers\StudentV2Controller.cs" />
     <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="Filters\ForceHttpsAttribute.cs" />
     <Compile Include="Filters\LearningAuthorizeAttribute.cs" />

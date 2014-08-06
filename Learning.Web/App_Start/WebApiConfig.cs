@@ -30,7 +30,7 @@ namespace Learning.Web
             );
 
             config.Routes.MapHttpRoute(
-                    name: "Students",
+                    name: "StudentsOld",
                     routeTemplate: "api/students/{userName}",
                     defaults: new { controller = "students", userName = RouteParameter.Optional }
                     );
@@ -42,10 +42,23 @@ namespace Learning.Web
             );
 
             config.Routes.MapHttpRoute(
-               name: "DefaultApi",
-               routeTemplate: "api/{controller}/{id}",
-               defaults: new { id = RouteParameter.Optional }
-           );
+                name: "Students",
+                routeTemplate: "api/v1/students/{userName}",
+                defaults: new { controller = "students", userName = RouteParameter.Optional }
+                );
+
+            config.Routes.MapHttpRoute(
+                            name: "Students2",
+                            routeTemplate: "api/v2/students/{userName}",
+                            defaults: new { controller = "studentsV2", userName = RouteParameter.Optional }
+                            );
+
+
+           // config.Routes.MapHttpRoute(
+           //    name: "DefaultApi",
+           //    routeTemplate: "api/{controller}/{id}",
+           //    defaults: new { id = RouteParameter.Optional }
+           //);
         }
     }
 }
